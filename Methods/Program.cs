@@ -4,16 +4,15 @@ namespace Methods
 {
     class Program
     {
-        static void MyMethod(string fname, int age)
+        /* The void keyword, used in the examples above, indicates that the method should not return a value. If you want the method to return a value, you can use a primitive data type (such as int or double) instead of void, and use the return keyword inside the method*/
+        static int MyMethod(int x)
         {
-            Console.WriteLine(fname + " is " + age);
+            return 5 + x;
         }
 
         static void Main(string[] args)
         {
-            MyMethod("Liam", 5);
-            MyMethod("Jenny", 8);
-            MyMethod("Anja", 31);
+            Console.WriteLine(MyMethod(3));
         }
 
     }
