@@ -4,17 +4,15 @@ namespace Methods
 {
     class Program
     {
-        // It is also possible to send arguments with the key: value syntax.
-        //That way, the order of the arguments does not matter:
-
-        static void MyMethod(string child1, string child2, string child3)
+        //Named arguments are especially useful when you have multiple parameters with default values, and you only want to specify one of them when you call it:
+        static void MyMethod(string child1 = "Liam", string child2 = "Jenny", string child3 = "John")
         {
-            Console.WriteLine("The youngest child is: " + child3);
+            Console.WriteLine(child3);
         }
 
         static void Main(string[] args)
         {
-            MyMethod(child3: "John", child1: "Liam", child2: "Liam");
+            MyMethod("child3");
         }
 
     }
