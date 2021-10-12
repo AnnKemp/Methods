@@ -3,18 +3,17 @@
 namespace Methods
 {
     class Program
-    { // with default value "Norway"
-        static void MyMethod(string country = "Norway")
+    {
+        static void MyMethod(string fname, int age)
         {
-            Console.WriteLine(country);
+            Console.WriteLine(fname + " is " + age);
         }
 
         static void Main(string[] args)
         {
-            MyMethod("Sweden");
-            MyMethod("India");
-            MyMethod();
-            MyMethod("USA");
+            MyMethod("Liam", 5);
+            MyMethod("Jenny", 8);
+            MyMethod("Anja", 31);
         }
 
     }
