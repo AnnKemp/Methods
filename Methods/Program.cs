@@ -3,18 +3,19 @@
 namespace Methods
 {
     class Program
-    {
-        static void MyMethod(string fname)  // always write het method-name with a capital letter at the start!
+    { // with default value "Norway"
+        static void MyMethod(string country = "Norway")
         {
-            Console.WriteLine(fname + " Refsnes");
+            Console.WriteLine(country);
         }
 
         static void Main(string[] args)
         {
-           // calling MyMethod from the Main method 
-            MyMethod("Liam");
-            MyMethod("Jenny");
-            MyMethod("Anja");
+            MyMethod("Sweden");
+            MyMethod("India");
+            MyMethod();
+            MyMethod("USA");
         }
+
     }
 }
