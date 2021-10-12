@@ -4,14 +4,17 @@ namespace Methods
 {
     class Program
     {
-        static void MyMethod()
+        static void MyMethod(string fname)  // always write het method-name with a capital letter at the start!
         {
-            Console.WriteLine("I just got executed!");
+            Console.WriteLine(fname + " Refsnes");
         }
 
         static void Main(string[] args)
         {
-            MyMethod();
+           // calling MyMethod from the Main method 
+            MyMethod("Liam");
+            MyMethod("Jenny");
+            MyMethod("Anja");
         }
     }
 }
