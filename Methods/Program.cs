@@ -4,15 +4,17 @@ namespace Methods
 {
     class Program
     {
-        static int MyMethod(int x, int y)
+        // It is also possible to send arguments with the key: value syntax.
+        //That way, the order of the arguments does not matter:
+
+        static void MyMethod(string child1, string child2, string child3)
         {
-            return x + y;
+            Console.WriteLine("The youngest child is: " + child3);
         }
 
         static void Main(string[] args)
         {
-            int z = MyMethod(5, 3);
-            Console.WriteLine(z);
+            MyMethod(child3: "John", child1: "Liam", child2: "Liam");
         }
 
     }
