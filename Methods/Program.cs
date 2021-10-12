@@ -11,7 +11,8 @@ namespace Methods
 
         static void Main(string[] args)
         {
-            Console.WriteLine(MyMethod(5, 3));
+            int z = MyMethod(5, 3);
+            Console.WriteLine(z);
         }
 
     }
